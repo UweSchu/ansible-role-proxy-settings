@@ -1,0 +1,8 @@
+- name: apply settings
+  template:
+    src: ./resources/proxy.j2
+    dest: "{{ dest_proxy_file }}"
+    mode: 0755
+  become: true
+
+- command: "{{ dest_proxy_file }}"
