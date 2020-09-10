@@ -4,5 +4,3 @@
     dest: "{{ dest_proxy_file }}"
     mode: 0755
   become: true
-
-- command: "{{ dest_proxy_file }}"

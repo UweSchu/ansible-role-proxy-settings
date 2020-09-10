@@ -1,12 +1,6 @@
 #!/bin/bash
 
-### Proxy
-export no_proxy="{{ no_proxy }}"
-export http_proxy="{{ url }}"
-export https_proxy=$http_proxy
-export ftp_proxy=$http_proxy
-
-export NO_PROXY=$no_proxy
-export HTTP_PROXY=$http_proxy
-export HTTPS_PROXY=$http_proxy
-export FTP_PROXY=$http_proxy
+### Proxy settings
+export {no_proxy,NO_PROXY}="{{ no_proxy }}"
+export {http,https,ftp}_proxy="{{ url }}"
+export {HTTP,HTTPS,FTP}_PROXY="{{ url }}"

@@ -1,0 +1,2 @@
+dest_proxy_file: /etc/profile.d/proxy.sh
+no_proxy: 'localhost,127.0.0.1'

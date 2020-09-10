@@ -1,1 +1,1 @@
-# ansible-role-proxy
+# ansible-role-proxy-settings
