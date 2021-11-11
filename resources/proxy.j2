@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ### Proxy settings
-export {no_proxy,NO_PROXY}="{{ no_proxy }}"
+### https://about.gitlab.com/blog/2021/01/27/we-need-to-talk-no-proxy/
 export {http,https,ftp}_proxy="{{ url }}"
 export {HTTP,HTTPS,FTP}_PROXY="{{ url }}"
+export {no_proxy,NO_PROXY}="{{ no_proxy }}"
